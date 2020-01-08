@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/etComment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".9"
+            android:gravity="top"
+            android:hint="@string/your_comment" />
+
+        <Button
+            android:id="@+id/btnPostComment"
+            android:layout_width="240dp"
+            android:layout_height="0dp"
+            android:layout_margin="8dp"
+            android:layout_weight=".1"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/btn_login"
+            android:text="@string/post_comment"
+            android:textAlignment="center"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+</layout>

@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Reddit</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="REDDIT_PREFERENCE">reddit_pref</string>
+    <string name="new_post">New</string>
+    <string name="top">Top</string>
+    <string name="hot">Hot</string>
+    <string name="best">Best</string>
+    <string name="search">Search</string>
+    <string name="type_a_subreddit">Type a subreddit</string>
+    <string name="refresh_feed">Refresh Feed</string>
+    <string name="loading_comments">Loading Comments...</string>
+    <string name="comments">COMMENTS</string>
+    <string name="add_a_comment">Add a comment</string>
+    <string name="your_comment">Your Comment</string>
+    <string name="post_comment">post comment</string>
 </resources>

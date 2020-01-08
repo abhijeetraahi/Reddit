@@ -9,6 +9,7 @@ import com.raahi.reddit.data.DataManager
 import com.raahi.reddit.data.RedditDataManager
 import com.raahi.reddit.data.network.ApiHelper
 import com.raahi.reddit.data.network.RedditApiHelper
+import com.raahi.reddit.data.preference.PreferenceHelper
 import com.raahi.reddit.di.ApplicationContext
 import dagger.Module
 import dagger.Provides
@@ -17,6 +18,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
 import javax.inject.Singleton
+
 
 @Module
 class ApplicationModule(private val application: RedditApplication) {
@@ -63,6 +65,12 @@ class ApplicationModule(private val application: RedditApplication) {
     @Singleton
     fun getApiHelper(apiHelper: RedditApiHelper): ApiHelper {
         return apiHelper
+    }
+
+    @Provides
+    @Singleton
+    fun getPreferenceHelper(preferenceHelper: PreferenceHelper): PreferenceHelper {
+        return preferenceHelper
     }
 
     @Provides
